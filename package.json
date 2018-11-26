@@ -7,24 +7,53 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "tt": "jest --verbose",
+    "tt:watch": "jest --verbose --watch",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^6.2.0",
+    "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
+    "chai": "^4.2.0",
+    "chai-jquery": "^2.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.6.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.2.0",
+    "mocha": "^5.2.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-preset-stage-1": "^6.1.18",
-    "lodash": "^3.10.1",
+    "bootstrap": "^4.1.3",
+    "chart.js": "^2.7.2",
+    "formik": "^1.3.1",
+    "google-map-react": "^1.0.9",
+    "history": "^4.7.2",
+    "lodash": "^4.17.5",
     "react": "16.3.2",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "16.3.2",
+    "react-promise": "^2.0.3",
     "react-redux": "5.0.7",
-    "redux": "4.0.0"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.2.2",
+    "redux": "4.0.0",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "url-parse": "^1.4.3"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js"
   }
 }

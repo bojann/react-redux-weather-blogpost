@@ -1,3 +1,15 @@
 {
-  "presets": ["react", "es2015", "stage-1"]
+  "presets": ["react", "es2015", "stage-1"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "test": "./src/setupTests",
+        "components": "./src/components",
+        "containers": "./src/containers",
+        "reducers": "./src/reducers",
+        "actions": "./src/actions"
+      }
+    }]
+   ]
 }

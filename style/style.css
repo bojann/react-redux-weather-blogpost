@@ -1,0 +1,6 @@
+@import "react-bootstrap";
+
+.nav a {
+    padding: 10px;
+    display: inline-block;
+}

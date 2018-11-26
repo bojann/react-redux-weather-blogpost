@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import SearchInput from "containers/SearchInput";
+import WeatherList from "containers/WeatherList";
+// import MyForm from "components/MyForm";
 
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <React.Fragment>
+        <SearchInput />
+        <WeatherList />
+      </React.Fragment>
     );
   }
 }

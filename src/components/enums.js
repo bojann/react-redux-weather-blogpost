@@ -1,0 +1,14 @@
+export const WEATHER_API = {
+  KEY: '199628c7d9e68af528e583a2d6cba205',
+  TYPE: 'FETCH_WEATHER'
+}
+
+export const BLOG_POSTS_API = {
+  KEY: 'BombonaB2121',
+  TYPE: {
+    'FETCH_POSTS': 'FETCH_POSTS',
+    'CREATE_POST': 'CREATE_POSTS',
+    'DELETE_POST': 'DELETE_POSTS',
+    'FETCH_A_POST': 'FETCH_A_POST',
+  }
+}

@@ -1,10 +1,10 @@
 export const WEATHER_API = {
-  KEY: '199628c7d9e68af528e583a2d6cba205',
+  KEY: '',
   TYPE: 'FETCH_WEATHER'
 }
 
 export const BLOG_POSTS_API = {
-  KEY: 'BombonaB2121',
+  KEY: '',
   TYPE: {
     'FETCH_POSTS': 'FETCH_POSTS',
     'CREATE_POST': 'CREATE_POSTS',

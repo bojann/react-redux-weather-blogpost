@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: ['./src/index.js'],
   output: {
@@ -17,7 +19,15 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    modules: ['src/scripts', 'node_modules'],
+    unsafeCache: true,
+    alias: {
+        components: path.resolve(__dirname, 'src', './', 'components'),
+        containers: path.resolve(__dirname, 'src', './', 'containers'),
+        reducers: path.resolve(__dirname, 'src', './', 'reducers'),
+        actions: path.resolve(__dirname, 'src', './', 'actions'),
+    }
   },
   devServer: {
     historyApiFallback: true,
